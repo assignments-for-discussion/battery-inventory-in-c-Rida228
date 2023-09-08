@@ -21,6 +21,8 @@ void testBucketingByHealth() {
   assert(counts.exchange == 3);
   assert(counts.failed == 1);
   printf("Done counting :)\n");
+  if(soh>=80 && soh<=100)
+      cout<<"Battery is healthy"<<endl;
 }
 
 int main() {
